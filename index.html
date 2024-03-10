@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="main">
+        <div class="upper">
+            <input readonly id="input">
+        </div>
+        <div class="lower">
+            <div class="btn">
+                <button class="bt" value="7">7</button>
+                <button class="bt" value="8">8</button>
+                <button class="bt" value="9">9</button>
+                <button style="background: #3e4f81; color: white; border: 1px solid #3e4f81;" onClick="del()()">DEL</button>
+            </div>
+            <div class="btn">
+                <button class="bt" value="4">4</button>
+                <button class="bt" value="5">5</button>
+                <button class="bt" value="6">6</button>
+                <button class="bt" value="+">+</button>
+            </div>
+            <div class="btn">
+                <button class="bt" value="1">1</button>
+                <button class="bt" value="2">2</button>
+                <button class="bt" value="3">3</button>
+                <button class="bt" value="-">-</button>
+            </div>
+            <div class="btn">
+                <button class="bt" value=".">.</button>
+                <button class="bt" value="0">0</button>
+                <button class="bt" value="/">/</button>
+                <button class="bt" value="*">*</button>
+            </div>
+            <div class="lowerBtn">
+                <button style="background: #3e4f81; color: white; border: 1px solid #3e4f81;" onclick="resetInput()">RESET</button>
+                &nbsp; &nbsp;
+                <button style="background: rgb(241, 66, 66); color: white; border: 1px solid rgb(241, 66, 66);" onclick="cal()">=</button>
+            </div>
+        </div>
+    </div>
+    <script defer src="./index.js"></script>
+</body>
+</html>
